@@ -23,3 +23,11 @@
   color: white;
   text-align: center;
 }
+
+body{
+  background-image: url("liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper_1258-82946.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
