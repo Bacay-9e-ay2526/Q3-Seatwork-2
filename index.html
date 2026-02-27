@@ -39,13 +39,19 @@
         <div class="container">
             <h1> Want a gaming laptop? </h1>
             <p class="text-muted"> Enter your budget to find the right one!</p>
-            <input type="number" id="budget" class="form-control" width="50" placeholder="Enter your budget">
+            <input type="number" id="budgetInput" class="form-control" width="50" placeholder="Enter your budget">
             
             
+            <br> 
+
             <div class="DiscountButton">
-                <button class="btn btn-primary mg-10" onclick="window.location.reload()" >Brand and Discount</button>
-                <button class="btn btn-primary mg-10" onclick="window.location.reload()" >Store location</button>
-                <button class="btn btn-primary mg-10" onclick="window.location.reload()" >Refresh</button>
+                <button class="btn btn-dark mg-10" onclick="computeDiscount()" >Brand and Discount</button>
+                <div id="discount-square"></div>
+                <br>
+                <button class="btn btn-dark mg-10" onclick="GetLocations()" >Store location</button>
+                <div id="discount-box"></div>
+                <br>
+                <button class="btn btn-dark mg-10" onclick="window.location.reload()" >Refresh</button>
             </div>
 
         </div>
@@ -53,20 +59,14 @@
         
 
         
-        
-        
-
-        
-
-        
-
     </main>
 
    <footer class="navbar">
-        <div class="footer">
+        <div class="footer bg-dark">
         <p> @2026 Pc Tech Hub. All Rights Reserved.</p>
         </div>
     </footer>
+  
 
     <script src="main.js">
 
@@ -77,14 +77,3 @@
 </body>
 </html>
 
-<div class="container bg-secondary rounded mt-5">
-    <h4 class="text-white"> Recommended Brands </h4>
-
-    <button class="btn-primary mt-3"> Acer</button>
-    <button class="btn-primary mt-3"> Asus </button>
-    <button class="btn-primary mt-3"> Lenovo</button>
-
-    <p class="text-muted"> Elligible dicount: <span class="bg-danger"></span></p>
-
-
-</div>
